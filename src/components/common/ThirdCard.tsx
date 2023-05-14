@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC } from "react";
 
 
@@ -21,7 +22,7 @@ const ThirdPartCard: FC<ThirdPartCardProps> = (props) => {
   return (
     <>
       <div className={`flex items-center justify-center px-3 py-1.5 rounded ${cardClass}`}>
-        <img src={logo} className="w-5 h-5"></img>
+        <Image src={logo} className="w-5 h-5" alt="logo" />
         <div className="ml-3 text-slate-50  bg-inherit"><span>{label}</span></div>
       </div>
     </>

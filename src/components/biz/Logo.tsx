@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import type { FC } from 'react'
-const Logo:FC=()=>(
-  <a href="/">
+const Logo: FC = () => (
+  <Link href="/">
     <div className=''>headless UI市场</div>
     <div>what<strong>Fa</strong></div>
-  </a>
+  </Link>
 )
 
 export default Logo

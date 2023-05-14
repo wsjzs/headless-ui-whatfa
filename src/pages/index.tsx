@@ -1,10 +1,11 @@
+import Link from "next/link";
 import { FC } from "react";
 
 const Index: FC = () => {
   return (
     <>
       <div>Hello World</div>
-      <a href="/home">Go Home</a>
+      <Link href="/home">Go Home</Link>
     </>
   )
 }

@@ -10,7 +10,7 @@ const AppLayout: FC<PropsWithChildren> = (props) => {
     <>
       <Head>
         <title>config whatfa</title>
-        <meta name="description" content="a free config hub, used in anywhere" />
+        <meta name="description" content="a free headless ui community, share and find your ui, tailwindcss html react vue" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

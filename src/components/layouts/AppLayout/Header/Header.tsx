@@ -1,13 +1,11 @@
 import Link from 'next/link'
-import {useRouter} from 'next/router'
-import { memo ,} from 'react'
+import { memo } from 'react'
 import Logo from '~/components/biz/Logo'
 
 
 
 
 const Header = memo(() => {
-  const router=useRouter()
   // const handleSign=()=>{
   //   router.push("/sign")
   // }

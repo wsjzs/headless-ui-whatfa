@@ -12,10 +12,10 @@ const Logo: FC = () => (
       {/* <Image src="/assets/img/svg/dark-site-logo.svg" width="40" height="40" alt="site logo" /> */}
     </Link>
     <div className='flex flex-col ml-2'>
-      <div><span>UI whatFa</span></div>
-      <div >
+      <div className='leading-10'><span>UI whatFa</span></div>
+      {/* <div >
         <span>free headless ui</span>
-      </div>
+      </div> */}
     </div>
   </>
 )

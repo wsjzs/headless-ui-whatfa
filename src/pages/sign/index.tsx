@@ -2,19 +2,24 @@ import Image from 'next/image'
 import { FC } from 'react'
 import Line from '~/components/common/Line'
 import ThirdPartCard, { ThirdPartName } from '~/components/common/ThirdCard'
+import Head from 'next/head'
 
 const Sign: FC = () => {
   return (
     <>
+    <Head>
+      <title>sign in</title>
+    </Head>
       <div className="flex min-h-full max-w-md mx-auto flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <Image
+          {/* <Image
             className="mx-auto h-10 w-auto"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
             width="40"
             height="40"
             alt="Your Company"
-          />
+          /> */}
+          <Image  className="mx-auto" src="/assets/img/svg/site-logo.svg" width="40" height="40" alt="ui whatfa site logo" />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Sign in to your account
           </h2>
@@ -33,7 +38,7 @@ const Sign: FC = () => {
                   type="email"
                   autoComplete="email"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset px-2 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -56,7 +61,7 @@ const Sign: FC = () => {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset px-2 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -71,24 +76,24 @@ const Sign: FC = () => {
             </div>
           </form>
 
-     
+
         </div>
 
         <div className="mt-10">
           <Line text='Or continue with' />
           {/* <div className="flex justify-between"> */}
           <div className="grid grid-cols-2 gap-4 mt-10">
-            <ThirdPartCard  name={ThirdPartName.TWITTER}/>
-            <ThirdPartCard  name={ThirdPartName.TWITTER}/>
+            <ThirdPartCard name={ThirdPartName.TWITTER} />
+            <ThirdPartCard name={ThirdPartName.TWITTER} />
           </div>
         </div>
 
         <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?{' '}
-            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-              Start a 14 day free trial
-            </a>
-          </p>
+          Not a member?{' '}
+          <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+            Start a 14 day free trial
+          </a>
+        </p>
       </div>
     </>
   )

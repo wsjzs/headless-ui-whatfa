@@ -21,7 +21,7 @@ const ThirdPartCard: FC<ThirdPartCardProps> = (props) => {
   const { logo, label, cardClass } = ThirdPartNameMap[props.name]
   return (
     <>
-      <div className={`flex items-center justify-center px-3 py-1.5 rounded ${cardClass}`}>
+      <div className={`flex items-center justify-center cursor-pointer px-3 py-1.5 rounded ${cardClass}`}>
         <Image src={logo} className="w-5 h-5" width="20" height="20" alt="logo" />
         <div className="ml-3 text-slate-50  bg-inherit"><span>{label}</span></div>
       </div>

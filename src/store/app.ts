@@ -5,7 +5,7 @@ export interface ViewPort{
   isMobile: boolean
 }
 export interface AppStore{
-viewPort:ViewPort
+  viewPort:ViewPort
 }
 
 export interface AppAction{

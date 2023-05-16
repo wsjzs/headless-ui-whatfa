@@ -22,7 +22,7 @@ const Header = memo(() => {
           </div>
           
           <Link href="/sign">
-            sign
+            Sign in
           </Link>
         </nav>
       </header>

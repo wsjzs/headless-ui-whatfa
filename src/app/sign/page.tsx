@@ -3,13 +3,14 @@ import { FC } from 'react'
 import Line from '~/components/common/Line'
 import ThirdPartCard, { ThirdPartName } from '~/components/common/ThirdCard'
 import Head from 'next/head'
+import { envConfig } from '~/config/env.config'
 
 const Sign: FC = () => {
   return (
     <>
-    <Head>
-      <title>sign in</title>
-    </Head>
+      <Head>
+        <title>sign in</title>
+      </Head>
       <div className="flex min-h-full max-w-md mx-auto flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           {/* <Image
@@ -19,9 +20,9 @@ const Sign: FC = () => {
             height="40"
             alt="Your Company"
           /> */}
-          <Image  className="mx-auto" src="/assets/img/svg/site-logo.svg" width="40" height="40" alt="ui whatfa site logo" />
+          <Image className="mx-auto" src="/assets/img/svg/site-logo.svg" width="40" height="40" alt="ui whatfa site logo" />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Sign in to your account
+            Sign in to whatFaUI
           </h2>
         </div>
 

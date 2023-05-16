@@ -15,7 +15,9 @@ export default function RootLayout({
         <link rel="sitemap" href="/sitemap.xml" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </head>
-      <body>
+      <body className="h-screen flex flex-col font-serif">
+      {/* serif */}
+      {/* mono */}
         {children}
       </body>
     </html>
